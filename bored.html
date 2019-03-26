@@ -46,7 +46,7 @@
                 var ctx=q.getContext('2d');
                 function getNextChar() {
                     //
-                    //return(""+Math.round(Math.random()));
+                    return(""+Math.round(Math.random()));
                     if(Math.random()<.4) {
                         // numbers
                         return(getRandomChar(48, 57));
@@ -85,7 +85,7 @@
                 function StopMatrix() {
                     clearInterval(Game_Interval);
                 }
-                //setInterval(draw, 33);
+                setInterval(draw, 33);
                 $("#pause").click(function() {
                     StopMatrix();
                 });
